@@ -1,43 +1,22 @@
-  <header class="mdl-layout__header">
-
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">{{ site.title }}</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      
-
-      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable is-upgraded">
-        <label class="mdl-button mdl-js-button mdl-button--icon" for="js-search__input">
-          <i class="material-icons">search</i>
-        </label>
-
-        <div class="mdl-textfield__expandable-holder" >
-          <input class="mdl-textfield__input super-search__input" type="text" id="js-search__input" />
+<div class="header">
+    <div class="container-fluid">
+        <div class="row-fluid">
+            <div class="col-sm-4">
+                <img src="{{ site.favicon | prepend: site.baseurl }}" title="Avatar" alt="My Avatar">
+                <h4>{{ site.author.name }}</h4>
+                <p>{{ site.author.title }}</p>
+                <p class="muted">{{ site.author.address }}</p>
+                <div class="clearfix"></div>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block visible-sm-block">
+                <p><i class="fa fa-envelope-o fa-fw"></i> {{ site.author.email }} </p>
+                <p><i class="fa fa-github fa-fw"></i><a href="//github.com/{{ site.author.github }}" target="_blank">  @{{ site.author.github }} </a></p>
+                <p><i class="fa fa-linkedin-square fa-fw"></i> <a href="//linkedin.com/in/{{ site.author.linkedin }}" target="_blank"> linkedin.com/in/{{ site.author.linkedin }} </a></p>
+                <p><i class="fa fa-twitter fa-fw"></i> <a href="//twitter.com/{{ site.author.twitter }}" target="_blank">  @{{ site.author.twitter }} </a></p>
+            </div>
+            <div class="col-sm-4 visible-md-block visible-lg-block">
+                <a href="#" class="btn btn-dark"><i class="icon-file icon-white"></i> Download.pdf </a>
+            </div>
         </div>
-      </div>
-
-      <button class="mdl-button mdl-js-button mdl-button--icon" id="menu-lower-left">
-        <i class="material-icons">more_vert</i>
-      </button>
-
-      <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="menu-lower-left">
-        {% for option in site.more_vert %}
-        <li><a href="{{ option[1].link }}" class="mdl-menu__item">{{ option[1].name }}</a></li>
-        {% endfor %}
-      </ul>
     </div>
-  </header>
-
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Menu</span>
-    <nav class="mdl-navigation">
-    {% for page in site.pages %}
-      {% if page.title %}
-      <a class="mdl-navigation__link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      {% endif %}
-    {% endfor %}
-    </nav>
-
-  </div>
-
+</div>
