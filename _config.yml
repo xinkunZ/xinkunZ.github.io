@@ -33,8 +33,8 @@ defaults:
 paginate: 20
 
 #### Site
-title : Fantastic Programmers and Where to find them
-tagline: A fresh looking and responsive theme for Jekyll
+title : Fantastic Programmers and Where to Find Them
+tagline: A true-cool Programmer's Blog
 assets: /assets
 baseurl: 
 
@@ -89,8 +89,8 @@ share_button: true #enable share buttons if true
 #### Author information
 author:
   name: xinkun      ## e.g. wuchong Author name
-  intro_line1:  "Hello ,I'm Larry Page in Google."    ## your introduction on the bottom of the page
-  intro_line2:  "This is my blog, believe it or not."  ## the 2nd line
+  intro_line1:  "A fantastic Programmer"    ## your introduction on the bottom of the page
+  intro_line2:  "This is my blog."  ## the 2nd line
   weibo: http://weibo.com/u/2726336413     ## e.g. wuchong1014 or 2176287895 for http://weibo.com/2176287895
   weibo_verifier:  ## e.g. b3593ceb Your weibo-show widget verifier ,if you use weibo-show it is needed.
   tsina: 2726336413      ## e.g. 2176287895  Your weibo ID,It will be used in share button.
