@@ -30,7 +30,7 @@ defaults:
       layout: "post"
       
 #### Pagination
-paginate: 20
+paginate: 5
 
 #### Site
 title : Fantastic Programmers and Where to Find Them
