@@ -9,29 +9,21 @@ highlighter: pygments
 permalink: /:categories/:year/:month/:day/:title 
 
 #### Markdown Processors
-markdown: redcarpet
-redcarpet:
-  extensions:
-    - hard_wrap
-    - no_intra_emphasis
-    - autolink
-    - strikethrough
-    - tables
-    - lax_spacing
-    - with_toc_data
-
-# markdown:    redcarpet
+# markdown: redcarpet
 # redcarpet:
-#   extensions: [ "fenced_code_blocks",
-#                 "hard_wrap",
-#                 "autolink",
-#                 "tables",
-#                 "strikethrough",
-#                 "with_toc_data",
-#                 "highlight",
-#                 "prettify",
-#                 "no_intra_emphasis"]
+#   extensions:
+#     - hard_wrap
+#     - no_intra_emphasis
+#     - autolink
+#     - strikethrough
+#     - tables
+#     - lax_spacing
+#     - with_toc_data
 
+markdown: kramdown
+kramdown:
+   input: GFM
+   hard_wrap: true
 
 #### Default Attributes
 defaults:
