@@ -32,7 +32,6 @@ redcarpet:
                 "prettify",
                 "no_intra_emphasis"]
 
-
 #### Default Attributes
 defaults:
   -
