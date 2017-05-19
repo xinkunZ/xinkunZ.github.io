@@ -21,7 +21,7 @@ description: 理解java classpath，以及Exception与error
 #### 反射
 * 反射内部类时要使用com.package.Class$InnerClass的方式
 * 实例化对象时可以使用Class.getConstructor()，使用指定参数的构造方法创建对象
-```
+```java
   public static void main(String[] args) throws Exception {
     Class c = StringBuilder.class;
     Constructor constructor = c.getConstructor(String.class);
